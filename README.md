@@ -1,0 +1,1 @@
+# optimized-floyd-steinberg-dithering
