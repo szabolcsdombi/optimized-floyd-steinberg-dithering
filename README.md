@@ -12,6 +12,8 @@ Unfortunately, I wasn't able to locate the original image that the author worked
 so I opted for a random sample image from the skimage library.
 I picked `skimage.data.coffee()` because I like coffee a lot.
 
+![coffee](https://github.com/szabolcsdombi/optimized-floyd-steinberg-dithering/assets/11232402/71fe150a-cc46-499c-9386-27437518e308)
+
 Below is the original `dither6()` function from the article for reference:
 
 ```py
