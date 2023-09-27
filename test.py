@@ -53,3 +53,7 @@ def test_py_dither(benchmark):
 
 def test_c_dither(benchmark):
     benchmark(c_dither, image)
+
+
+def test_correctness():
+    np.testing.assert_array_equal(c_dither(image), py_dither(image))

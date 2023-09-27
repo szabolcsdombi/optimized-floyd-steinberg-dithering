@@ -118,8 +118,6 @@ python setup.py build_ext --inplace
 ```
 
 ```bash
-python -W ignore -m pytest test.py \
-    --benchmark-disable-gc \
-    --benchmark-columns=mean,stddev,median,ops \
-    --benchmark-sort=mean
+python -m pytest test.py -k correctness
+python -m pytest test.py --benchmark-disable-gc --benchmark-columns=mean,stddev,median,ops --benchmark-sort=mean
 ```
