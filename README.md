@@ -121,3 +121,14 @@ python setup.py build_ext --inplace
 python -m pytest test.py -k correctness
 python -m pytest test.py --benchmark-disable-gc --benchmark-columns=mean,stddev,median,ops --benchmark-sort=mean
 ```
+
+The results show a 40% time shaved off:
+
+```
+------------------------------------------ benchmark: 2 tests -----------------------------------------
+Name (time in us)         Mean             StdDev              Median            OPS (Kops/s)
+-------------------------------------------------------------------------------------------------------
+test_c_dither         646.6338 (1.0)      25.0760 (1.0)      642.7000 (1.0)            1.5465 (1.0)
+test_py_dither        911.7800 (1.41)     29.8442 (1.19)     894.9000 (1.39)           1.0968 (0.71)
+-------------------------------------------------------------------------------------------------------
+```
